@@ -14,10 +14,6 @@ app.add_middleware(
     allow_methods=["*"],  # 허용할 HTTP 메서드
     allow_headers=["*"],  # 허용할 HTTP 헤더
 )
-
-app = FastAPI()
-
-
 @app.get("/")
 async def root():
     return {"message": "EGI FAST API"}

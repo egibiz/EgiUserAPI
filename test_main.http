@@ -1,5 +1,5 @@
 # Test your FastAPI endpoints
-POST http://127.0.0.1:8000/api/post
+POST http://data.egibiz.co.kr:10900/api/post
 Content-Type: application/json
 
 {
