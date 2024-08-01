@@ -2,6 +2,18 @@ from fastapi import FastAPI
 import uvicorn
 from get_data import common_rpc_call
 from models import RpcParam
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI()
+
+# CORS 미들웨어 설정
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # 허용할 출처 목록
+    allow_credentials=True,
+    allow_methods=["*"],  # 허용할 HTTP 메서드
+    allow_headers=["*"],  # 허용할 HTTP 헤더
+)
 
 app = FastAPI()
 
