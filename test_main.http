@@ -1,0 +1,25 @@
+# Test your FastAPI endpoints
+POST http://127.0.0.1:8000/api/post
+Content-Type: application/json
+
+{
+    "rpc_id": "up_MOB_001_LOGIN_SELECT",
+    "user_id": "",
+    "param": ["kwon@naver.com",  "1234"],
+    "is_one": 1
+}
+###
+POST http://127.0.0.1:8000/api/post
+Content-Type: application/json
+
+{
+  "rpc_id": "up_BID_WEB_LOGIN_CHK",
+  "user_id": "BV202402002",
+  "param": ["BV202402002", "1"],
+  "is_one": 0
+}
+###
+POST http://115.22.156.196:8000/api/post
+Content-Type: application/json
+
+{"rpc_id":"up_BID_WEB_VENDOR_EMAIL_SAVE","user_id":"","param":["INSERT","BV202402002","34234234234","2342","true"],"is_one":1}
